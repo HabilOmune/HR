@@ -1,0 +1,32 @@
+ui-view{
+    background-color:whitesmoke;
+}
+/*
+.mainbar{
+    max-height:45px;
+    min-height:45px;
+}
+.mainbar .md-toolbar-tools{
+    padding-left:22rem;
+    padding-right:22rem;
+}
+
+
+/***********WALL***************/
+md-card md-card-content{
+    padding-bottom:unset;
+}
+md-card md-card-actions{
+    padding-top:unset;
+}
+
+
+/************SIGNUP PAGE****************/
+#signup{
+  margin-top: 5rem;
+}
+
+#signup .panel .panel-body{
+  height: 30rem;
+}
+/*************leave MODAL***************/

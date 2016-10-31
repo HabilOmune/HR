@@ -1,0 +1,65 @@
+scraps.html
+<div class="md-dialog-content">
+    <div>
+        <form name="userForm">
+
+            <div layout-gt-md="row">
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>Name</label>
+                    <input ng-model="frm.name">
+                </md-input-container>
+
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>Department</label>
+                    <md-select ng-model="frm.department" placeholder="Depertment" class="md-no-underline">
+                        <md-option value="axe">Insights</md-option>
+                        <md-option value="sword">Grass Management</md-option>
+                        <md-option value="wand">Business Development</md-option>
+                    </md-select>
+                </md-input-container>
+            </div>
+
+            <div layout-gt-sm="row">
+                <md-input-container class="md-block" flex-gt-sm>
+                    <md-select ng-model="frm.reson" placeholder="Reason for Leave application" class="md-no-underline">
+                        <md-option value="Sick">Sick</md-option>
+                        <md-option value="Berevement">Berevement</md-option>
+                        <md-option value="Unpaid Leave">Unpaid Leave</md-option>
+                        <md-option value="Personal Leave">Personal Leave</md-option>
+                        <md-option value="Maternity/Paternity Leave">Maternity/Paternity Leave</md-option>
+                    </md-select>
+                </md-input-container>
+
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>Person to sit in on behalf</label>
+                    <input ng-model="frm.rep">
+                </md-input-container>
+            </div>
+
+
+            <md-input-container class="md-block">
+                <label>Leave Period</label>
+            </md-input-container>
+
+            <div layout-gt-sm="row">
+                <md-input-container class="md-block" flex-gt-sm>
+                    <div flex-gt-xs>
+                        <md-datepicker ng-model="frm.from" md-placeholder="From" md-open-on-focus></md-datepicker>
+                    </div>
+                </md-input-container>
+
+                <md-input-container class="md-block" flex-gt-sm>
+                    <div flex-gt-xs>
+                        <md-datepicker ng-model="frm.to" md-placeholder="To" md-open-on-focus></md-datepicker>
+                    </div>
+                </md-input-container>
+            </div>
+
+        </form>
+    </div>
+    </md-dialog-content>
+
+
+</div>
+                </div>
+            </div>

@@ -1,0 +1,15 @@
+﻿{
+  "name": "Grass Company HRM Tool",
+  "short_name": "TGC HRM",
+  "lang": "en-US",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#cccc32",
+  "background_color": "#cccc32",
+  "gcm_sender_id": "103953800507",
+  "icons": [
+    {
+      "src": "logo.png"
+    }
+  ]
+}

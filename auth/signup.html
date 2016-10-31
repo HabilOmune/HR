@@ -1,0 +1,23 @@
+
+<div class="row" id="signup">
+<div class="col-sm-offset-4 col-sm-4 col-xs-offset-1 col-xs-10">
+  <div class="panel">
+   <div class="panel-heading">
+      <md-icon><i class="fa fa-user-plus"></i></md-icon>
+   </div>
+   <div class="panel-body">
+     <form ng-submit=signup(frm)>
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email" required ng-model="frm.email">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd" required ng-model=frm.pwd>
+  </div>
+  <button type="submit" class="btn btn-default">Create User Account</button>
+</form>
+   </div>
+  </div>
+</div>
+</div>

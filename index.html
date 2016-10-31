@@ -1,0 +1,104 @@
+ ﻿<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>TGCHRM | Welcome</title>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+    <link rel="manifest" href="js/manifest.json">
+
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="hrm">
+    <meta name="apple-mobile-web-app-title" content="hrm">
+    <meta name="theme-color" content="#cccc33">
+    <meta name="msapplication-navbutton-color" content="#cccc33">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-starturl" content="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
+
+
+
+
+    <link href="node_modules/materialicons/material-icons.css" rel="stylesheet" />
+    <link href="node_modules/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <link href="node_modules/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="node_modules/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="node_modules/angular-material/angular-material.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+	<script src="node_modules/angular/angular.min.js"></script>
+	<script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script src="node_modules/angular-animate/angular-animate.min.js"></script>
+	<script src="node_modules/angular-aria/angular-aria.min.js"></script>
+	<script src="node_modules/angular-messages/angular-messages.min.js"></script>
+	<script src="node_modules/angular-material/angular-material.js"></script>
+   <script type="text/javascript" src="node_modules/angularfire/firebase.js"></script>
+   <script type="text/javascript" src="node_modules/angularfire/angularfire.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/3.5.2/firebase-messaging.js"></script>
+
+
+	<script src="auth/auth.js"></script>
+	<script src="leave/leave.js"></script>
+	<script src="project/project.js"></script>
+	<script src="wall/wall.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/app.js"></script>
+ <!--  <script type="text/javascript" src="js/service-worker-registration.js"></script>-->
+
+
+<script type="text/javascript">
+	var config = {
+ apiKey: "AIzaSyB3KmqQ8pi2HLx5AbWUhQtC3Hjg4aVsy6s",
+ authDomain: "tgcgh-12f3d.firebaseapp.com",
+ databaseURL: "https://tgcgh-12f3d.firebaseio.com",
+ storageBucket: "tgcgh-12f3d.appspot.com",
+ messagingSenderId: "287082907847"
+	};
+
+firebase.initializeApp(config);
+const messaging = firebase.messaging();
+
+messaging.onMessage(function(payload) {
+console.log("Message received. ", payload);
+});
+
+
+</script>
+
+</head>
+
+<body ng-app="HRM">
+    <div layout="column" layout-fill ng-controller="indexCtrl">
+        <md-toolbar class="mainbar">
+                <div class="md-toolbar-tools">
+                    <md-button class="md-icon-button hidden-sm hidden-md hidden-lg" aria-label="menu" ng-click="openLeftMenu()">
+                        <md-icon class="material-icons"><i class="material-icons">menu</i></md-icon>
+                    </md-button>
+
+                    <span class="hidden-xs"><img src="img/Logo-with-specks.png" width="40%" /></span>
+
+                    <!-- fill up the space between left and right area -->
+                    <span flex></span>
+                    <img  class="img-responsive img-circle img-thumbnail hidden-xs" width="3%" src="img/avi.jpg">
+                </div>
+        </md-toolbar>
+        <div layout="row">
+            <md-sidenav md-component-id="left" class="md-sidenav-left">
+                SQUADDDDD
+            </md-sidenav>
+        </div>
+        <ui-view></ui-view>
+    </div>
+</body>
+</html>
